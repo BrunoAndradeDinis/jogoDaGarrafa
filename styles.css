@@ -16,7 +16,7 @@ body {
 }
 
 .bottle {
-  width: 40px; /* Reduzindo a largura da garrafa */
+  width: 20px; /* Reduzindo a largura da garrafa */
   height: 120px; /* Reduzindo a altura proporcionalmente */
   background-color: salmon;
   border-radius: 50% 50% 20% 20%;
