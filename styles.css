@@ -1,0 +1,65 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: rgb(156, 229, 253);
+}
+
+.container {
+  text-align: center;
+  display: grid;
+  gap: 2rem;
+  position: relative;
+  place-content: center;
+}
+
+.bottle {
+  width: 40px; /* Reduzindo a largura da garrafa */
+  height: 120px; /* Reduzindo a altura proporcionalmente */
+  background-color: salmon;
+  border-radius: 50% 50% 20% 20%;
+  margin: 20px auto;
+  position: relative;
+  text-align: center;
+  object-fit: cover ;
+  display: inline-block;
+}
+
+input[type="text"] {
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 50vw 0 0;
+  max-width: 1000px;
+}
+
+li {
+  margin: 10px;
+  position: absolute;
+  transform-origin: 50% 100%; /* Configurando a origem da transformação para o ponto inferior do círculo */
+}
+
+#players {
+  position: relative;
+}
+
+.players{
+  position: relative;
+}
+
+.jogadores {
+  position: absolute;
+  top: -2rem;
+  left: -2.2rem;
+}
