@@ -46,17 +46,22 @@ function displayPlayers() {
 }
 
 function spinBottle() {
-  if (playerList.length === 0) {
-    alert("Por favor, adicione pelo menos um jogador.");
+  if (playerList.length === 4) {
+    alert("Por favor, adicione pelo menos 4 jogadores.");
+    return;
+  }
+  
+  if (playerList.length % 2 !== 0) {
+    alert("Por favor, adicione um número par de jogadores para girar a garrafa.");
     return;
   }
   
   const randomIndex = Math.floor(Math.random() * playerList.length);
   const selectedPlayer = playerList[randomIndex];
 
-
   rotateBottle();
 }
+
 
 function rotateBottle() {
   const bottle = document.querySelector(".bottle");
