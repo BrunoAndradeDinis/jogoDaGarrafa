@@ -46,7 +46,12 @@ function displayPlayers() {
 }
 
 function spinBottle() {
-  if (playerList.length === 4) {
+  if (playerList.length === 0) {
+    alert("Por favor, adicione pelo menos 4 jogadores.");
+    return;
+  }
+
+  if(playerList.length < 4){
     alert("Por favor, adicione pelo menos 4 jogadores.");
     return;
   }
